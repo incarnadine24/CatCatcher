@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".screens.MenuFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/play_button"
+            android:layout_width="250dp"
+            android:backgroundTint="#77FFFFFF"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/archivo_black"
+            android:text="Play"
+            android:textSize="36sp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scores_button"
+            android:layout_width="250dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#77FFFFFF"
+            android:fontFamily="@font/archivo_black"
+            android:text="Scores"
+            android:textSize="36sp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rate_button"
+            android:layout_width="250dp"
+            android:backgroundTint="#77FFFFFF"
+            android:text="Rate"
+            android:fontFamily="@font/archivo_black"
+            android:layout_margin="5dp"
+            android:textSize="36sp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/share_button"
+            android:layout_width="250dp"
+            android:backgroundTint="#77FFFFFF"
+            android:text="Share"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/archivo_black"
+            android:textSize="36sp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:layout_height="60dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/quit_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#77FFFFFF"
+            android:fontFamily="@font/archivo_black"
+            android:text="Quit"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="36sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
