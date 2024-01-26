@@ -19,10 +19,10 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/archivo_black"
             android:text="Play"
-            android:textSize="36sp"
+            android:textSize="32sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:layout_height="60dp"/>
+            android:layout_height="wrap_content"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scores_button"
@@ -31,10 +31,10 @@
             android:backgroundTint="#77FFFFFF"
             android:fontFamily="@font/archivo_black"
             android:text="Scores"
-            android:textSize="36sp"
+            android:textSize="32sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:layout_height="60dp"/>
+            android:layout_height="wrap_content"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/rate_button"
@@ -43,10 +43,10 @@
             android:text="Rate"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
-            android:textSize="36sp"
+            android:textSize="32sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:layout_height="60dp"/>
+            android:layout_height="wrap_content"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/share_button"
@@ -55,22 +55,22 @@
             android:text="Share"
             android:layout_margin="5dp"
             android:fontFamily="@font/archivo_black"
-            android:textSize="36sp"
+            android:textSize="32sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:layout_height="60dp"/>
+            android:layout_height="wrap_content"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/quit_button"
             android:layout_width="250dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:backgroundTint="#77FFFFFF"
             android:fontFamily="@font/archivo_black"
             android:text="Quit"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="36sp" />
+            android:textSize="32sp" />
 
 
     </LinearLayout>
