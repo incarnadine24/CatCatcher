@@ -92,8 +92,9 @@ class PlayFragment : Fragment() {
 
         binding.restartButton.setOnClickListener {
             binding.pauseFrame.visibility = View.INVISIBLE
-            viewModel.changers.value = "true"
+            ChangeList(activity as MainActivity).changingList(viewModel.count.value!!)
             viewModel.count.value = 0
+            viewModel.changers.value = "true"
             cat.x = ((0..screenWidth - 150).random()).toFloat()
             viewModel.catxvalue.value = cat.x
             viewModel.catyvalue.value = 0f
@@ -150,8 +151,15 @@ class PlayFragment : Fragment() {
 
         binding.bed.y = (screenHeight - 350).toFloat()
         binding.bed.x = (screenWidth / 2).toFloat()
+        binding.menuButton.setOnClickListener {
+            ChangeList(activity as MainActivity).changingList(viewModel.count.value!!)
+            viewModel.count.value = 0
+            findNavController().navigate(R.id.action_playFragment_to_menuFragment)
+        }
 
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            ChangeList(activity as MainActivity).changingList(viewModel.count.value!!)
+            viewModel.count.value = 0
             findNavController().navigate(R.id.action_playFragment_to_menuFragment)
         }
     }
