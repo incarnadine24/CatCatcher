@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_playFragment_to_finishFragment"
             app:destination="@id/finishFragment" />
+        <action
+            android:id="@+id/action_playFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/scoresFragment"

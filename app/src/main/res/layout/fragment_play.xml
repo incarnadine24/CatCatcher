@@ -10,8 +10,7 @@
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="25dp"
+        android:layout_margin="10dp"
         android:layout_gravity="top|end"
         android:fontFamily="@font/archivo_black"
         android:text="Score: 0"
@@ -23,8 +22,7 @@
         android:id="@+id/pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginStart="25dp"
+        android:layout_margin="10dp"
         android:backgroundTint="#77FFFFFF"
         android:fontFamily="@font/archivo_black"
         android:text="Pause"
@@ -44,5 +42,58 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/neko1"/>
+
+    <FrameLayout
+        android:id="@+id/pause_frame"
+        android:layout_width="match_parent"
+        android:background="#99000000"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/archivo_black"
+                android:text="Pause"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/continue_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:backgroundTint="#77FFFFFF"
+                android:fontFamily="@font/archivo_black"
+                android:text="Continue"
+                android:textAllCaps="true"
+
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/restart_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#77FFFFFF"
+                android:fontFamily="@font/archivo_black"
+                android:text="Restart"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
 
 </FrameLayout>

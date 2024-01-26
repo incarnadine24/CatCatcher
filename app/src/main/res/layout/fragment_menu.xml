@@ -19,7 +19,7 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/archivo_black"
             android:text="Play"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:layout_height="wrap_content"/>
@@ -31,7 +31,7 @@
             android:backgroundTint="#77FFFFFF"
             android:fontFamily="@font/archivo_black"
             android:text="Scores"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:layout_height="wrap_content"/>
@@ -43,7 +43,7 @@
             android:text="Rate"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:layout_height="wrap_content"/>
@@ -55,7 +55,7 @@
             android:text="Share"
             android:layout_margin="5dp"
             android:fontFamily="@font/archivo_black"
-            android:textSize="32sp"
+            android:textSize="28sp"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:layout_height="wrap_content"/>
@@ -70,7 +70,7 @@
             android:text="Quit"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="32sp" />
+            android:textSize="28sp" />
 
 
     </LinearLayout>

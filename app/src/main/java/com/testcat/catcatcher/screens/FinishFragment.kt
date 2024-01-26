@@ -22,14 +22,12 @@ class FinishFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentFinishBinding.inflate(inflater, container, false)
-        println("ghujyhftgdrfthyyhftgrdfsegjy")
         val view = binding.root
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        println("k775yhrhjtjtrhdrtyhbgrt")
         val appPrefs : AppPrefs = AppPrefs(activity as MainActivity)
         binding.scoreText.text = "Score: ${appPrefs.getList("scoreKey")[0]}"
         binding.menuButton.setOnClickListener {

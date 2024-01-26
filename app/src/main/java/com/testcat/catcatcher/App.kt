@@ -1,6 +1,5 @@
 package com.testcat.catcatcher
 
-import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson

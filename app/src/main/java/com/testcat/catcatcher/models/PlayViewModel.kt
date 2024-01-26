@@ -11,4 +11,5 @@ class PlayViewModel : ViewModel() {
     val changers = MutableLiveData<String>("true")
     val speed = MutableLiveData<Int>(10)
     val count = MutableLiveData<Int>(0)
+    val pause = MutableLiveData<String>("false")
 }
