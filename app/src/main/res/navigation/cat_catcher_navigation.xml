@@ -21,10 +21,26 @@
         android:id="@+id/playFragment"
         android:name="com.testcat.catcatcher.screens.PlayFragment"
         android:label="fragment_play"
-        tools:layout="@layout/fragment_play" />
+        tools:layout="@layout/fragment_play" >
+        <action
+            android:id="@+id/action_playFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+    </fragment>
     <fragment
         android:id="@+id/scoresFragment"
         android:name="com.testcat.catcatcher.screens.ScoresFragment"
         android:label="fragment_scores"
         tools:layout="@layout/fragment_scores" />
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.testcat.catcatcher.screens.FinishFragment"
+        android:label="fragment_finish"
+        tools:layout="@layout/fragment_finish" >
+        <action
+            android:id="@+id/action_finishFragment_to_playFragment"
+            app:destination="@id/playFragment" />
+        <action
+            android:id="@+id/action_finishFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
 </navigation>

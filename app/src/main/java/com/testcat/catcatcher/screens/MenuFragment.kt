@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.testcat.catcatcher.AppPrefs
 import com.testcat.catcatcher.MainActivity
 import com.testcat.catcatcher.models.MenuViewModel
 import com.testcat.catcatcher.R
@@ -34,7 +35,13 @@ class MenuFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(MenuViewModel::class.java)
-
+        var getListFromPrefs = AppPrefs(activity as MainActivity).getList("scoreKey")
+        println("sdfbgnmjhgfdasdxffghj,kjmhngf")
+        println(getListFromPrefs)
+        if(getListFromPrefs.isEmpty()){
+            println("Sefdgthyhtgrfdsadefrhgyjuhgfd")
+            AppPrefs(activity as MainActivity).saveList("scoreKey",listOf(0,0,0,0,0))
+        }
         binding.playButton.setOnClickListener{
             findNavController().navigate(R.id.action_menuFragment_to_playFragment)
         }
@@ -74,17 +81,7 @@ class MenuFragment : Fragment() {
         startActivityForResult(intent, 22)
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if(requestCode==22){
-            if(resultCode==-1){
-                Toast.makeText(activity as MainActivity,"Thanks for your rate",Toast.LENGTH_SHORT).show()
-            }
-            else{
-                Toast.makeText(activity as MainActivity,"Something went wrong",Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -39,4 +39,10 @@
         android:layout_height="150dp"
         android:src="@drawable/bed"/>
 
+    <ImageView
+        android:id="@+id/cat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/neko1"/>
+
 </FrameLayout>
