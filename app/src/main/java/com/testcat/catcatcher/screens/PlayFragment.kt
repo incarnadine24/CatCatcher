@@ -28,9 +28,7 @@ import kotlinx.coroutines.launch
 
 class PlayFragment : Fragment() {
 
-
     private lateinit var viewModel: PlayViewModel
-
     private var _binding: FragmentPlayBinding? = null
     private val binding get() = _binding!!
     var endGame = "true"
@@ -38,7 +36,7 @@ class PlayFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentPlayBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
@@ -55,7 +53,6 @@ class PlayFragment : Fragment() {
             binding.pauseFrame.visibility = View.INVISIBLE
             viewModel.changers.value = "true"
         }
-
 
         val sensorManager =
             requireActivity().getSystemService(Context.SENSOR_SERVICE) as SensorManager
@@ -151,14 +148,12 @@ class PlayFragment : Fragment() {
 
         })
 
-
         binding.bed.y = (screenHeight - 350).toFloat()
         binding.bed.x = (screenWidth / 2).toFloat()
 
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
             findNavController().navigate(R.id.action_playFragment_to_menuFragment)
         }
-
     }
 
     private fun getScreenSize(context: Context): Pair<Int, Int> {
@@ -176,8 +171,6 @@ class PlayFragment : Fragment() {
         endGame = "true"
         _binding = null
     }
-
-
 }
 
 class MySensorEventListener(val binding: FragmentPlayBinding, val viewModel: PlayViewModel) :

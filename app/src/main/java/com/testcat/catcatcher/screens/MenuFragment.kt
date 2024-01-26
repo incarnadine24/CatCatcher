@@ -50,7 +50,6 @@ class MenuFragment : Fragment() {
         binding.quitButton.setOnClickListener {
             (activity as MainActivity).finish()
         }
-
     }
 
     private fun sharedGame(){
@@ -62,8 +61,6 @@ class MenuFragment : Fragment() {
         startActivity(intentShared)
     }
 
-
-
     private fun rateGame(){
         val intent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse("market://details?id=com.testcat.catcatcher")
@@ -72,11 +69,8 @@ class MenuFragment : Fragment() {
         startActivityForResult(intent, 22)
     }
 
-
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
 }

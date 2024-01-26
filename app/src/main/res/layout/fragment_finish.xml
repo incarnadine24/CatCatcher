@@ -22,6 +22,7 @@
             android:textColor="@color/white"
             android:fontFamily="@font/archivo_black"
             android:layout_height="wrap_content"/>
+
         <TextView
             android:id="@+id/score_text"
             android:layout_width="wrap_content"
@@ -42,9 +43,9 @@
             android:fontFamily="@font/archivo_black"
             android:text="@string/menu"
             android:textAllCaps="true"
-
             android:textColor="@color/black"
             android:textSize="28sp" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/restart_button"
             android:layout_width="250dp"
@@ -59,5 +60,4 @@
             android:textSize="28sp" />
 
     </LinearLayout>
-
 </FrameLayout>

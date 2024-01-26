@@ -13,7 +13,6 @@ import com.testcat.catcatcher.databinding.FragmentFinishBinding
 
 class FinishFragment : Fragment() {
 
-
     private var _binding: FragmentFinishBinding? = null
     private val binding get() = _binding!!
 
@@ -37,5 +36,4 @@ class FinishFragment : Fragment() {
             findNavController().navigate(R.id.action_finishFragment_to_playFragment)
         }
     }
-
 }
