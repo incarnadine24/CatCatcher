@@ -15,8 +15,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Last 5 scores:"
-            android:backgroundTint="#77FFFFFF"
+            android:text="@string/last5scores"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
             android:textSize="28sp"
@@ -27,8 +26,7 @@
 
         <TextView
             android:id="@+id/first"
-            android:text="1. 0"
-            android:backgroundTint="#77FFFFFF"
+            android:text="@string/first"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
             android:textSize="28sp"
@@ -38,8 +36,7 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/second"
-            android:text="2. 0"
-            android:backgroundTint="#77FFFFFF"
+            android:text="@string/second"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
             android:textSize="28sp"
@@ -49,8 +46,7 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/third"
-            android:text="3. 0"
-            android:backgroundTint="#77FFFFFF"
+            android:text="@string/third"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
             android:textSize="28sp"
@@ -60,8 +56,7 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/fourth"
-            android:text="4. 0"
-            android:backgroundTint="#77FFFFFF"
+            android:text="@string/fourth"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
             android:textSize="28sp"
@@ -71,8 +66,7 @@
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/fifth"
-            android:text="5. 0"
-            android:backgroundTint="#77FFFFFF"
+            android:text="@string/fifth"
             android:fontFamily="@font/archivo_black"
             android:layout_margin="5dp"
             android:textSize="28sp"

@@ -16,7 +16,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Game Over"
+            android:text="@string/game_over"
             android:textAllCaps="true"
             android:textSize="36sp"
             android:textColor="@color/white"
@@ -25,7 +25,7 @@
         <TextView
             android:id="@+id/score_text"
             android:layout_width="wrap_content"
-            android:text="Score: 0"
+            android:text="@string/score"
             android:textAllCaps="false"
             android:textSize="24sp"
             android:layout_marginBottom="35dp"
@@ -38,9 +38,9 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#77FFFFFF"
+            android:backgroundTint="@color/grey_back"
             android:fontFamily="@font/archivo_black"
-            android:text="Menu"
+            android:text="@string/menu"
             android:textAllCaps="true"
 
             android:textColor="@color/black"
@@ -50,10 +50,10 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:backgroundTint="#77FFFFFF"
+            android:backgroundTint="@color/grey_back"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/archivo_black"
-            android:text="Restart"
+            android:text="@string/restart"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="28sp" />

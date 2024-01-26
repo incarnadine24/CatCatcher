@@ -21,7 +21,7 @@ class MenuFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
@@ -54,10 +54,10 @@ class MenuFragment : Fragment() {
     }
 
     private fun sharedGame(){
-        val intentShared : Intent = Intent(Intent.ACTION_SEND)
+        val intentShared = Intent(Intent.ACTION_SEND)
         intentShared.apply{
             type = "text/plain"
-            putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.missclick.alias")
+            putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.testcat.catcatcher")
         }
         startActivity(intentShared)
     }
@@ -66,7 +66,7 @@ class MenuFragment : Fragment() {
 
     private fun rateGame(){
         val intent = Intent(Intent.ACTION_VIEW).apply {
-            data = Uri.parse("market://details?id=com.missclick.alias")
+            data = Uri.parse("market://details?id=com.testcat.catcatcher")
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
         startActivityForResult(intent, 22)
