@@ -92,7 +92,6 @@ class PlayFragment : Fragment() {
 
         binding.restartButton.setOnClickListener {
             binding.pauseFrame.visibility = View.INVISIBLE
-            ChangeList(activity as MainActivity).changingList(viewModel.count.value!!)
             viewModel.count.value = 0
             viewModel.changers.value = "true"
             cat.x = ((0..screenWidth - 150).random()).toFloat()
